@@ -19,6 +19,7 @@ Route::get('/about', function(){
     return view('about');
 });
 
-Route::get('new', [
-    'uses'=>'PagesController@new'
-]);
+Route::get('new', 'PagesController@new');
+
+
+Route::get('todos', 'TodosController@index');

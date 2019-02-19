@@ -11,4 +11,8 @@ class PagesController extends Controller
         // return "this is new controller";
         return view('new');
     }
+
+    // public function index(){
+    //     return view('todos'); 
+    // }
 }
