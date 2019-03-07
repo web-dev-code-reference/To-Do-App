@@ -14,7 +14,7 @@
 
 
     @foreach ($todos as $todo)
-        <p>ID:{{ $todo->id }}  To Do:{{ $todo->todo }}</p>
+        <p>ID:{{ $todo->id }}  To Do:{{ $todo->todo }} <a href="{{route('todo.delete', ['id'=>$todo->id])}}"  class="btn btn-danger">X</button></a><p>
         <hr>
     @endforeach
 @stop
