@@ -23,3 +23,4 @@ Route::get('new', 'PagesController@new');
 
 
 Route::get('todos', 'TodosController@index');
+Route::post('create/todo', 'TodosController@store');
