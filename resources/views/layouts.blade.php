@@ -16,8 +16,13 @@
      
     </head>
     <body>
-
+        
         <div class="container">
+        @if(Session::has('success'))
+            <div class="alert alert-success">
+                <strong>Success!</strong> {{Session::get('success')}}
+            </div>
+        @endif()
         <div class="flex-center position-ref full-height">
             <!-- @if (Route::has('login'))
                 <div class="top-right links">
